@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form" name="form">
+            <div class="form-item">
+                <label for="sum" class="form-item-label">Сумма в долларах</label>
+                <input type="text" id="sum" class="form-input">
+            </div>
+            <div class="form-item">
+                <label for="rate" class="form-item-label">Обменный курс</label>
+                <input type="text" id="rate" class="form-input">
+            </div>
+            <div class="form-item">
+                <label>Размер шрифта:</label>
+                <input type="radio" id="size14" name="size" value="14" checked>
+                <label for="size14">14</label>
+                <input type="radio" id="size20" name="size" value="20">
+                <label for="size20">20</label><br><br>
+            </div>
+            <div class="form-item">
+                <input type="button" id="load-from-xml" value="Загрузить из XML">
+                <input type="button" id="load-script" value="Загрузить локальный скрипт">
+                <input type="button" id="convert" value="Пересчитать">
+            </div>
+        </form>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

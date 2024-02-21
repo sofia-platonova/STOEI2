@@ -1,0 +1,197 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url('gravity_falls_forest.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-size: 100%;
+}
+
+.wrapper {
+    margin: 10px;
+    display: inline-block;
+    width: 400px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+
+.form {
+    padding: 10px;
+    box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    background-color: #c9b4d6;
+}
+
+.info-message {
+    color: #d93a23;
+    display: none;
+    margin: 10px 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    background-color: rgba(227, 218, 206, 0.75);
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.form-item {
+    border-bottom: 0px solid #eee;
+    padding: 2px 0;
+}
+
+.form-input {
+    font-family: Arial;
+    text-align: justify;
+    color: #3c3c3c;
+}
+
+.form-input, .form-select {
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.form-item-label {
+    text-align: left;
+}
+
+.form-item-label-radio label,
+.form-item-label-radio input {
+    vertical-align: middle;
+}
+
+.form-item input[type=button],
+.form-item input[type=reset] {
+    width: 380px;
+    height: 30px;
+    margin: 5px 0px;
+    display: inline-block;
+    color: #ccedec;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: .5em 2em;
+    border: none;
+    transition: 0.2s;
+    background-color: #3b7d7b;
+}
+
+    .form-item input[type=button]:hover,
+    .form-item input[type=reset]:hover {
+        background: #1d4746;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+
+.groups-data {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.groups-table {
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    font-family: "Century Gothic";
+    background-color: rgba(227, 218, 206, 0.75);
+}
+
+.groups-table th {
+    padding: 3px 5px;
+}
+
+.groups-table td {
+    text-align: center;
+    padding: 7px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #4e4a4a;
+  display: none;
+}
+
+.modal-content h3 {
+  position: relative;
+  left: 30%;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #d93a23;
+  border-bottom: 3px solid rgb(217, 58, 35);
+  display: inline-block;
+}
+
+.close {
+  position: absolute;
+  top: 24%;
+  right: 31.5%;
+  font-family: "Arial";
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+}
+
+.close:hover {
+  transition: color 0.3s ease-in-out;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error-input {
+  box-shadow: 0 0 8px rgba(215, 31, 31, 1);
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {
+    box-shadow: 0 0 8px rgba(215, 31, 31, 1);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(215, 31, 31, 0.2);
+  }
+}
+
+.error-message-1 {
+  position: absolute;
+  left: 28%;
+  top: 4%;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #d93a23;
+  display: none;
+}
+
+.error-message-2 {
+  position: absolute;
+  left: 28%;
+  top: 11%;
+  font-weight: bold;
+  font-family: "Arial";
+  color: #d93a23;
+  display: none;
+}
